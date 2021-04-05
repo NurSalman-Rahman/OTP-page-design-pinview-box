@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="#930B31"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/phoneid"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/password"
+        android:layout_width="150dp"
+        android:layout_height="180dp">
+    </TextView>
+    <TextView
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="@string/please_enter"
+        android:id="@+id/textEnterid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:id="@+id/textmessegeid"
+
+        android:text="the validstion code that get from sms"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="4"
+        app:cursorVisible="true"
+        app:inputType="number"/>
+</LinearLayout>
